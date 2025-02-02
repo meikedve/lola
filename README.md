@@ -1,5 +1,4 @@
-# lola
-Logic and Language project code
+# Logic and Language project code
 
 Our model (the run_patterns() function) takes as argument a list of patterns and a SNLI data set.
 
