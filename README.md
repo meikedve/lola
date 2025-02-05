@@ -1,7 +1,8 @@
 # Logic and Language project code
 
-Our model (the run_patterns() function) takes as argument a list of patterns and a SNLI data set.
+This code provides the rule-based model developed for the paper “Detecting inference patterns in SNLI”. The model can be run using the run_patterns() function and provides the precision and coverage results of the model tested on SNLI’s test dataset. Here, covered examples are those that satisfy at least one pattern, and hence received a label from the model.
 
-Run_patterns can be used with a single pattern as argument to calculate the precision of that pattern. The precision of a pattern is the percentage correct labels of the given labels. This is the chance that a label given by this pattern is correct.
+The precision and coverage results of each pattern on the training dataset we used, are retrieved in the section “Precision and Coverage on Training Data”.  To make sure that the training data remains the same, the file "sampleKeysLoLa.txt" should be in the same repository of the .ipynb file.
 
-When run_patterns is ran with multiple patterns as argument, the precisions of the patterns are used inside the function to decide the final label of an example. This is the label of the pattern with the highest precision on that example. The total precision of the patterns used together is printed. The number of covered examples is also printed. Covered examples are examples that satisfy at least one pattern, and hence received a label from the model.
+The last section provides the code to plot the Jaccard similarities between the different inference categories.
+
